@@ -1,0 +1,22 @@
+info:
+  name: put estudio
+  type: http
+  seq: 7
+
+http:
+  method: PUT
+  url: http://localhost:3000/estudios
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Bldep games",
+        "pais": "Brasil"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,23 @@
+info:
+  name: put jogadores
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: http://localhost:3000/jogadores/1
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Iago Damazio Amorim",
+        "email": "iagobldep@gmail.com",
+        "nickname": "iagobldep"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

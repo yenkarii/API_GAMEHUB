@@ -1,0 +1,23 @@
+info:
+  name: post jogos
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:3000/estudios
+  body:
+    type: json
+    data: |-
+      {
+        "titulo": "Penumbra",
+        "ano_lancamento": 2024,
+        "estudio_id": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
